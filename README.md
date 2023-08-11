@@ -77,3 +77,15 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+
+
+
+# Instalación del SDK Apple Health
+1. yarn add react-native-rook_ah
+2. cambiar en el podfile la versión minima de android a la 13.0
+3. ir a xcode -> projecto ->  targets seleccionar el proyecto -> Signing & Capabilities -> + Capability -> agregar HealthKit. 
+   https://stackoverflow.com/questions/25993314/healthkit-error-missing-com-apple-developer-healthkit-entitlement
+4. hacer lo que dice la docu en configuration. 
+   https://docs.tryrook.io/docs/ROOKConnect/SDKs/ReactNative/rook-apple-health/#configuration-
+5. npx pod-install

@@ -375,6 +375,9 @@ PODS:
   - React-jsinspector (0.72.3)
   - React-logger (0.72.3):
     - glog
+  - react-native-rook-ah (0.3.8):
+    - React-Core
+    - RookAppleHealth (= 1.0.1)
   - react-native-safari-view (1.0.0):
     - React
   - React-NativeModulesApple (0.72.3):
@@ -489,6 +492,7 @@ PODS:
     - React-perflogger (= 0.72.3)
   - RNCAsyncStorage (1.19.1):
     - React-Core
+  - RookAppleHealth (1.0.1)
   - SocketRocket (0.6.1)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
@@ -540,6 +544,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
+  - react-native-rook-ah (from `../node_modules/react-native-rook_ah`)
   - react-native-safari-view (from `../node_modules/react-native-safari-view`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
@@ -575,6 +580,7 @@ SPEC REPOS:
     - fmt
     - libevent
     - OpenSSL-Universal
+    - RookAppleHealth
     - SocketRocket
     - YogaKit
 
@@ -622,6 +628,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
+  react-native-rook-ah:
+    :path: "../node_modules/react-native-rook_ah"
   react-native-safari-view:
     :path: "../node_modules/react-native-safari-view"
   React-NativeModulesApple:
@@ -697,6 +705,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 59d1eb03af7d30b7d66589c410f13151271e8006
   React-jsinspector: b511447170f561157547bc0bef3f169663860be7
   React-logger: c5b527272d5f22eaa09bb3c3a690fee8f237ae95
+  react-native-rook-ah: 1aed3453c1c533d2c5a798d13b6461e4f2bc3492
   react-native-safari-view: 955d7160d159241b8e9395d12d10ea0ef863dcdd
   React-NativeModulesApple: c57f3efe0df288a6532b726ad2d0322a9bf38472
   React-perflogger: 6bd153e776e6beed54c56b0847e1220a3ff92ba5
@@ -716,6 +725,7 @@ SPEC CHECKSUMS:
   React-utils: bcb57da67eec2711f8b353f6e3d33bd8e4b2efa3
   ReactCommon: 3ccb8fb14e6b3277e38c73b0ff5e4a1b8db017a9
   RNCAsyncStorage: f47fe18526970a69c34b548883e1aeceb115e3e1
+  RookAppleHealth: 85560c68b9e4246837915d15ff34de385f37a80e
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: 8796b55dba14d7004f980b54bcc9833ee45b28ce
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a

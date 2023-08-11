@@ -14,6 +14,7 @@
     "@react-native-async-storage/async-storage": "^1.19.1",
     "react": "18.2.0",
     "react-native": "0.72.3",
+    "react-native-rook_ah": "^0.3.8",
     "react-native-safari-view": "^2.1.0",
     "rook_auth": "^0.4.2"
   },

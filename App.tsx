@@ -9,6 +9,8 @@ import React from 'react';
 import {Button, SafeAreaView, StatusBar, View} from 'react-native';
 import SafariView from 'react-native-safari-view';
 import {RookConnectProvider} from 'rook_auth';
+import AppleHealthInfo from './src/components/AppleHealthInfo';
+import AppleHealthPermissions from './src/components/AppleHealthPermissions';
 
 function App(): JSX.Element {
   const onClick = () => {
@@ -20,7 +22,7 @@ function App(): JSX.Element {
     <SafeAreaView>
       <StatusBar barStyle={'light-content'} />
       <View>
-        <Button title="titleee" onPress={onClick} />
+        <Button title="connections page" onPress={onClick} />
       </View>
       <RookConnectProvider
         keys={{
@@ -28,9 +30,8 @@ function App(): JSX.Element {
           apiURL: 'https://api.rook-connect.review',
           password: '3VQ0AExGLjM8X0xTKUHeMEtEI6lNgCCpSXQH',
         }}>
-        <View>
-          <Button title="title" onPress={onClick} />
-        </View>
+        <AppleHealthPermissions />
+        <AppleHealthInfo />
       </RookConnectProvider>
     </SafeAreaView>
   );
