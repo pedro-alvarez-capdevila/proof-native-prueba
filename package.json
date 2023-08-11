@@ -7,12 +7,15 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "start-iphone14": "react-native run-ios --simulator \"iPhone 14 Pro 16.4\""
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.19.1",
     "react": "18.2.0",
     "react-native": "0.72.3",
-    "react-native-safari-view": "^2.1.0"
+    "react-native-safari-view": "^2.1.0",
+    "rook_auth": "^0.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

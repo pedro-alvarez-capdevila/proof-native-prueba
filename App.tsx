@@ -8,6 +8,7 @@
 import React from 'react';
 import {Button, SafeAreaView, StatusBar, View} from 'react-native';
 import SafariView from 'react-native-safari-view';
+import {RookConnectProvider} from 'rook_auth';
 
 function App(): JSX.Element {
   const onClick = () => {
@@ -21,6 +22,16 @@ function App(): JSX.Element {
       <View>
         <Button title="titleee" onPress={onClick} />
       </View>
+      <RookConnectProvider
+        keys={{
+          clientUUID: '37102ab3-eab6-4ccb-a890-18bc47bdf7e6',
+          apiURL: 'https://api.rook-connect.review',
+          password: '3VQ0AExGLjM8X0xTKUHeMEtEI6lNgCCpSXQH',
+        }}>
+        <View>
+          <Button title="title" onPress={onClick} />
+        </View>
+      </RookConnectProvider>
     </SafeAreaView>
   );
 }
