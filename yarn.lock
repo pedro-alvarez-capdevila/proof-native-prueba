@@ -5405,6 +5405,20 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
+react-native-rook-android-transmission@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/react-native-rook-android-transmission/-/react-native-rook-android-transmission-0.2.5.tgz#48e66ed671d6ced17b6351845cdf180a8be11df9"
+  integrity sha512-fXh2V/rO+VmHA1ISK7J6O7nQQhRac38/QwyjZqEmlqlLbXTRqCpPBuexhrUIk2dVazeQz0om1Eu6dL0aYeqFNw==
+  dependencies:
+    rook_auth "^0.4.2"
+
+react-native-rook-health-connect@^0.2.7:
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/react-native-rook-health-connect/-/react-native-rook-health-connect-0.2.7.tgz#caf710e78b34eaeb647c06b33dcc0c6bb7794639"
+  integrity sha512-M6B/XSpwMRmpbzu1FWGRbBaPQSr4WYf7fo7MbH236Jk84oAq4TX4ovoGPK92onY1IqMUk72xiaQl3Hh0ddPQOA==
+  dependencies:
+    rook_auth "^0.4.2"
+
 react-native-rook_ah@^0.3.8:
   version "0.3.8"
   resolved "https://registry.yarnpkg.com/react-native-rook_ah/-/react-native-rook_ah-0.3.8.tgz#f8e63a0edb9703ed669838f454f647b9e299b5fd"

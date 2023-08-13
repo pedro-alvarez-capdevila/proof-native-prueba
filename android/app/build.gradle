@@ -76,8 +76,8 @@ android {
     namespace "com.proof"
     defaultConfig {
         applicationId "com.proof"
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
+        minSdkVersion 26
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
     }
@@ -118,6 +118,8 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+
+    implementation project(":react-native-shared-preferences")
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)

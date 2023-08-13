@@ -6,11 +6,13 @@
  */
 
 import React from 'react';
-import {Button, SafeAreaView, StatusBar, View} from 'react-native';
+import {Button, SafeAreaView, StatusBar, Text, View} from 'react-native';
 import SafariView from 'react-native-safari-view';
 import {RookConnectProvider} from 'rook_auth';
 import AppleHealthInfo from './src/components/AppleHealthInfo';
 import AppleHealthPermissions from './src/components/AppleHealthPermissions';
+import HealthConnectInfo from './src/components/HealthConnectInfo';
+import HealthConnectPermissions from './src/components/HealthConnectPermissions';
 
 function App(): JSX.Element {
   const onClick = () => {
@@ -30,8 +32,16 @@ function App(): JSX.Element {
           apiURL: 'https://api.rook-connect.review',
           password: '3VQ0AExGLjM8X0xTKUHeMEtEI6lNgCCpSXQH',
         }}>
-        <AppleHealthPermissions />
-        <AppleHealthInfo />
+        <View>
+          <Text>IOS</Text>
+          <AppleHealthPermissions />
+          <AppleHealthInfo />
+        </View>
+        <View style={{marginTop: 100}}>
+          <Text>ANDROID</Text>
+          <HealthConnectPermissions />
+          <HealthConnectInfo />
+        </View>
       </RookConnectProvider>
     </SafeAreaView>
   );
