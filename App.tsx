@@ -6,13 +6,21 @@
  */
 
 import React from 'react';
-import {Button, SafeAreaView, StatusBar, Text, View} from 'react-native';
+import {
+  Button,
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
+  Text,
+  View,
+} from 'react-native';
 import SafariView from 'react-native-safari-view';
 import {RookConnectProvider} from 'rook_auth';
 import AppleHealthInfo from './src/components/AppleHealthInfo';
 import AppleHealthPermissions from './src/components/AppleHealthPermissions';
 import HealthConnectInfo from './src/components/HealthConnectInfo';
 import HealthConnectPermissions from './src/components/HealthConnectPermissions';
+import {UpdateUserID} from './src/components/UpdateUserID';
 
 function App(): JSX.Element {
   const onClick = () => {
@@ -32,16 +40,22 @@ function App(): JSX.Element {
           apiURL: 'https://api.rook-connect.review',
           password: '3VQ0AExGLjM8X0xTKUHeMEtEI6lNgCCpSXQH',
         }}>
-        <View>
-          <Text>IOS</Text>
-          <AppleHealthPermissions />
-          <AppleHealthInfo />
-        </View>
-        <View style={{marginTop: 100}}>
-          <Text>ANDROID</Text>
-          <HealthConnectPermissions />
-          <HealthConnectInfo />
-        </View>
+        <ScrollView>
+          <View>
+            <Text style={{fontSize: 30}}>IOS</Text>
+            <AppleHealthPermissions />
+            <AppleHealthInfo />
+          </View>
+          <View style={{marginTop: 100}}>
+            <Text style={{fontSize: 30}}>ANDROID</Text>
+            <HealthConnectPermissions />
+            <HealthConnectInfo />
+          </View>
+          <View style={{marginTop: 100}}>
+            <Text style={{fontSize: 30}}>update user</Text>
+            <UpdateUserID />
+          </View>
+        </ScrollView>
       </RookConnectProvider>
     </SafeAreaView>
   );
